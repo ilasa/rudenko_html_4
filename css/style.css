@@ -1,0 +1,308 @@
+body{
+    background-color: #0c739f;
+    background-image: url("../img/bg_1.jpg");
+    background-repeat: repeat-x;
+}
+
+.wrapper {
+    width: auto;
+    margin: auto 100px;
+    font-family: Arial, sans-serif;
+}
+
+.main {
+    width: 100%;
+    font-size: 14px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 27px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 27px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 27px 0px rgba(0,0,0,0.75);
+}
+
+.shadow {
+    box-shadow: 0 9px 0 -5px #000;
+}
+
+header {
+    width: 100%;
+    height: 166px;
+    position: relative;
+}
+
+header a {
+    color: #5fa5bb;
+}
+
+a.logo {
+    float: left;
+    position: relative;
+}
+
+.image {
+    padding-top: 6px;
+    padding-left: 28px;
+}
+
+.logo-link {
+    position: absolute;
+    top: 70%;
+    bottom:54px;
+    left: 72px;
+}
+
+address.contacts {
+    float: right;
+    position: relative;
+}
+
+.contacts {
+    padding-top: 10px;
+    padding-right: 32px;
+}
+
+.contacts span {
+    display: block;
+    font-size: 12px;
+    line-height: 20px;
+    color: #5fa5bb;
+    text-align: left;
+}
+
+span.contacts1 {
+    text-shadow: 1px 1px 1px #128aa7;
+}
+
+ul.countries li {
+    float: left;
+    padding: 8px;
+}
+
+nav.countries {
+    position: absolute;
+    top: 62%;
+    right: 32px;
+    font-size: 10px;
+}
+
+.countries p {
+    text-align: center;
+}
+
+.countries li:nth-child(5),
+.countries li:last-child {
+    padding-right: 0;
+}
+
+.container1 {
+    width: 100%;
+    overflow: hidden;
+}
+
+.clearfix::after {
+    display: block;
+    clear: both;
+    content: '';
+}
+
+.image1 {
+    width: 100%;
+    display: block;
+}
+
+.navigation {
+    background: #343434;
+    border-top: 2px #edeef0 solid;
+}
+
+ul {
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 3px #000 solid;
+}
+
+ul:after {
+    display: block;
+    content: '';
+    clear: both;
+    float: none;
+}
+
+ul.menu > li {
+    float: left;
+    position: relative;
+}
+
+ul.submenu > li > a:hover {
+    background-color: #ff2115;
+}
+
+
+ul.menu > li > a {
+    display: block;
+    width: 130px;
+    padding: 10px;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu li a:first-child {
+     padding-left: 21px;
+ }
+
+ul.submenu {
+    display: none;
+    position: absolute;
+    width: 150px;
+    left: 0;
+    background-color: #343434;
+    -webkit-box-shadow: -1px 9px 16px -2px rgba(0,0,0,1);
+    -moz-box-shadow: -1px 9px 16px -2px rgba(0,0,0,1);
+    box-shadow: -1px 9px 16px -2px rgba(0,0,0,1)
+}
+
+ul.submenu > li {
+    display: block;
+}
+
+ul.submenu > li:first-child{
+    border-top: 3px #000 solid;
+}
+
+ul.submenu > li > a {
+    display: block;
+    padding: 10px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #303030;
+    text-decoration: none;
+}
+
+ul.menu > li:hover > ul.submenu {
+    display: block;
+}
+
+ul.menu li.active > a:after{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    margin-top: -2px;
+    margin-left: 7px;
+    border-width: 6px 6px 0 6px;
+    border-style: solid;
+    border-color: grey transparent;
+}
+
+.container2 {
+    width: 100%;
+    background-image: url(../img/bg-content.png);
+    background-repeat: repeat-y;
+    background-size: 100%;
+    float: left;
+    box-shadow: 0 3px 3px #575555 inset;
+    /*!*box-shadow: 0 20px 0 -10px #000;*! Не получилось задать нижнюю тень*/
+}
+
+aside {
+    width: 20%;
+    float: left;
+}
+
+content {
+    width: 60%;
+    float: left;
+}
+
+article {
+    width: 20%;
+    float: right;
+}
+
+content h2,
+article h2,
+aside h2 {
+    padding-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #424c43;
+    text-align: center;
+}
+
+content p,
+article p,
+aside p {
+    padding: 15px 24px 15px 15px;
+    color: #424c43;
+    line-height: 25px;
+}
+
+
+/*три колонки одинаковой высоты через 3-й способ обертывающих блоков - НЕ ПОЛУЧИЛОСЬ СДЕЛАТЬ!!!*/
+/*.container2 {*/
+/*width: 100%;*/
+/*overflow: hidden;*/
+/*}*/
+
+/*.aside {*/
+/*width: 100%;*/
+/*background: #edeef0;*/
+/*float: left;*/
+/*position: relative;*/
+/*right: 55%;*/
+/*}*/
+
+/*.content {*/
+/*width: 100%;*/
+
+/*background: green;*/
+
+/*float: left;*/
+/*position: relative;*/
+/*right: 25%;*/
+/*}*/
+
+/*.news {*/
+/*width: 100%;*/
+/*background: #edeef0;*/
+/*float: left;*/
+/*}*/
+
+/*aside {*/
+/*width: 20%;*/
+/*float: left;*/
+/*overflow: hidden;*/
+/*position: relative;*/
+/*left: 80%;*/
+/*}*/
+
+/*content {*/
+/*width: 55%;*/
+/*float: left;*/
+/*overflow: hidden;*/
+/*position: relative;*/
+/*left: 80%;*/
+/*}*/
+
+/*article {*/
+/*width: 24%;*/
+/*float: left;*/
+/*overflow: hidden;*/
+/*position: relative;*/
+/*left: 80%;*/
+/*}*/
+/*три колонки одинаковой высоты через 3-й способ обертывающих блоков*/
+
+.footer {
+    text-align: center;
+    margin: 10px;
+}
+
+.footer a {
+    font-size: 12px;
+    color: #fff;
+    text-decoration: none;
+}
