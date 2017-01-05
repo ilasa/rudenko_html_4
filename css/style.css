@@ -1,6 +1,6 @@
-body{
+body {
     background-color: #0c739f;
-    background-image: url("../img/bg_1.jpg");
+    background-image: url('../img/bg_1.jpg');
     background-repeat: repeat-x;
 }
 
@@ -12,11 +12,11 @@ body{
 
 .main {
     width: 100%;
-    font-size: 14px;
     background-color: #fff;
-    -webkit-box-shadow: 0px 0px 27px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 27px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 27px 0px rgba(0,0,0,0.75);
+    font-size: 14px;
+    -moz-box-shadow: 0 0 27px 0 rgba(0, 0, 0, .75);
+    -webkit-box-shadow: 0 0 27px 0 rgba(0, 0, 0, .75);
+    box-shadow: 0 0 27px 0 rgba(0, 0, 0, .75);
 }
 
 .shadow {
@@ -24,18 +24,18 @@ body{
 }
 
 header {
-    width: 100%;
-    height: 166px;
     position: relative;
+    width: 100%;
+    height: 174px;
 }
 
 header a {
     color: #5fa5bb;
 }
 
-a.logo {
-    float: left;
+.logo {
     position: relative;
+    float: left;
 }
 
 .image {
@@ -46,38 +46,35 @@ a.logo {
 .logo-link {
     position: absolute;
     top: 70%;
-    bottom:54px;
+    bottom: 54px;
     left: 72px;
 }
 
-address.contacts {
-    float: right;
-    position: relative;
-}
-
 .contacts {
+    position: relative;
     padding-top: 10px;
     padding-right: 32px;
+    float: right;
 }
 
 .contacts span {
     display: block;
+    color: #5fa5bb;
     font-size: 12px;
     line-height: 20px;
-    color: #5fa5bb;
     text-align: left;
 }
 
-span.contacts1 {
+.contacts1 {
     text-shadow: 1px 1px 1px #128aa7;
 }
 
-ul.countries li {
-    float: left;
+.countries li {
     padding: 8px;
+    float: left;
 }
 
-nav.countries {
+.countries ul {
     position: absolute;
     top: 62%;
     right: 32px;
@@ -105,204 +102,150 @@ nav.countries {
 }
 
 .image1 {
-    width: 100%;
     display: block;
+    width: 100%;
 }
 
 .navigation {
-    background: #343434;
     border-top: 2px #edeef0 solid;
+    background: #343434;
 }
 
-ul {
+.menu {
     display: block;
-    padding: 0;
     margin: 0 auto;
-    text-align: center;
+    padding: 0;
     border-bottom: 3px #000 solid;
+    text-align: center;
 }
 
-ul:after {
+ul::after {
     display: block;
-    content: '';
-    clear: both;
     float: none;
+    clear: both;
+    content: '';
 }
 
-ul.menu > li {
-    float: left;
+.menu > li {
     position: relative;
+    float: left;
 }
 
-ul.submenu > li > a:hover {
+.submenu > li > a:hover {
     background-color: #ff2115;
 }
 
-
-ul.menu > li > a {
+.menu > li > a {
     display: block;
     width: 130px;
     padding: 10px;
-    font-size: 14px;
     color: #fff;
+    font-size: 14px;
     text-decoration: none;
 }
 
 .menu li a:first-child {
-     padding-left: 21px;
- }
-
-ul.submenu {
-    display: none;
-    position: absolute;
-    width: 150px;
-    left: 0;
-    background-color: #343434;
-    -webkit-box-shadow: -1px 9px 16px -2px rgba(0,0,0,1);
-    -moz-box-shadow: -1px 9px 16px -2px rgba(0,0,0,1);
-    box-shadow: -1px 9px 16px -2px rgba(0,0,0,1)
+    padding-left: 21px;
 }
 
-ul.submenu > li {
+.submenu {
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 150px;
+    background-color: #343434;
+    -moz-box-shadow: -1px 9px 16px -2px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: -1px 9px 16px -2px rgba(0, 0, 0, 1);
+    box-shadow: -1px 9px 16px -2px rgba(0, 0, 0, 1);
+}
+
+.submenu > li {
     display: block;
 }
 
-ul.submenu > li:first-child{
+.submenu > li:first-child {
     border-top: 3px #000 solid;
 }
 
-ul.submenu > li > a {
+.submenu > li > a {
     display: block;
     padding: 10px;
-    font-size: 14px;
-    color: #fff;
     background-color: #303030;
+    color: #fff;
+    font-size: 14px;
     text-decoration: none;
 }
 
-ul.menu > li:hover > ul.submenu {
+.menu > li:hover > .submenu {
     display: block;
 }
 
-ul.menu li.active > a:after{
-    content: "";
-    width: 0;
-    height: 0;
+.menu .active > a::after {
     position: absolute;
     top: 50%;
+    width: 0;
+    height: 0;
     margin-top: -2px;
     margin-left: 7px;
-    border-width: 6px 6px 0 6px;
+    border-width: 6px 6px 0;
     border-style: solid;
-    border-color: grey transparent;
+    border-color: #edeef0 transparent;
+    content: '';
 }
 
 .container2 {
     width: 100%;
-    background-image: url(../img/bg-content.png);
+    float: left;
+    background-image: url('../img/bg-content.png');
     background-repeat: repeat-y;
     background-size: 100%;
-    float: left;
     box-shadow: 0 3px 3px #575555 inset;
-    /*!*box-shadow: 0 20px 0 -10px #000;*! Не получилось задать нижнюю тень*/
 }
+
+/*!*box-shadow: 0 20px 0 -10px #000;*! Не получилось задать нижнюю тень*/
 
 aside {
-    width: 20%;
+    width: 21%;
     float: left;
 }
 
-content {
-    width: 60%;
+.content {
+    width: 58%;
     float: left;
 }
 
 article {
-    width: 20%;
+    width: 21%;
     float: right;
 }
 
-content h2,
+.content h2,
 article h2,
 aside h2 {
     padding-top: 15px;
+    color: #424c43;
     font-size: 18px;
     font-weight: bold;
-    color: #424c43;
     text-align: center;
 }
 
-content p,
+.content p,
 article p,
 aside p {
-    padding: 15px 24px 15px 15px;
+    padding: 15px 26px 15px 20px;
     color: #424c43;
     line-height: 25px;
 }
 
-
-/*три колонки одинаковой высоты через 3-й способ обертывающих блоков - НЕ ПОЛУЧИЛОСЬ СДЕЛАТЬ!!!*/
-/*.container2 {*/
-/*width: 100%;*/
-/*overflow: hidden;*/
-/*}*/
-
-/*.aside {*/
-/*width: 100%;*/
-/*background: #edeef0;*/
-/*float: left;*/
-/*position: relative;*/
-/*right: 55%;*/
-/*}*/
-
-/*.content {*/
-/*width: 100%;*/
-
-/*background: green;*/
-
-/*float: left;*/
-/*position: relative;*/
-/*right: 25%;*/
-/*}*/
-
-/*.news {*/
-/*width: 100%;*/
-/*background: #edeef0;*/
-/*float: left;*/
-/*}*/
-
-/*aside {*/
-/*width: 20%;*/
-/*float: left;*/
-/*overflow: hidden;*/
-/*position: relative;*/
-/*left: 80%;*/
-/*}*/
-
-/*content {*/
-/*width: 55%;*/
-/*float: left;*/
-/*overflow: hidden;*/
-/*position: relative;*/
-/*left: 80%;*/
-/*}*/
-
-/*article {*/
-/*width: 24%;*/
-/*float: left;*/
-/*overflow: hidden;*/
-/*position: relative;*/
-/*left: 80%;*/
-/*}*/
-/*три колонки одинаковой высоты через 3-й способ обертывающих блоков*/
-
 .footer {
-    text-align: center;
     margin: 10px;
+    text-align: center;
 }
 
 .footer a {
-    font-size: 12px;
     color: #fff;
+    font-size: 12px;
     text-decoration: none;
 }
+
+
